@@ -159,6 +159,107 @@ Dengan struktur seperti ini, berkas-berkas praktikum akan lebih tertata rapi dan
 
 ---
 
-## Kesimpulan
 
-Instalasi VSCode dilakukan dengan mengunduh installer dari situs resmi, menjalankan proses instalasi sesuai petunjuk, dan menentukan working directory yang terstruktur untuk menyimpan seluruh berkas praktikum. Struktur folder yang rapi akan membantu dalam pengelolaan kode selama proses pembelajaran.
+## Install Node.js 20.11.0 Menggunakan NVM
+
+Setelah NVM terpasang, langkah berikutnya adalah menginstal Node.js versi **20.11.0**.
+
+---
+
+### STEP 2 — Install Node.js 20.11.0 via NVM
+
+Buka **CMD** atau **PowerShell**, lalu ketik perintah berikut:
+
+```bash
+nvm install 20.11.0
+```
+
+Tunggu hingga proses instalasi selesai.
+
+Setelah itu, aktifkan versi Node.js yang telah diinstal dengan perintah:
+
+```bash
+nvm use 20.11.0
+```
+
+---
+
+### STEP 3 — Cek Versi Node.js dan npm
+
+Untuk memastikan Node.js telah aktif, jalankan:
+
+```bash
+node -v
+```
+
+Output yang diharapkan:
+
+```
+v20.11.0
+```
+
+Selanjutnya, cek versi npm:
+
+```bash
+npm -v
+```
+
+Output yang diharapkan:
+
+```
+10.2.4
+```
+
+Versi npm tersebut sudah termasuk bawaan dari Node.js 20.11.0.
+
+
+## STEP 1 — Install NVM (Windows)
+
+Pada praktikum ini digunakan **Node Version Manager (NVM) for Windows** versi **1.1.12**.
+
+---
+
+### 1. Download NVM Versi 1.1.12
+
+Untuk langsung menuju halaman rilis versi 1.1.12, buka tautan berikut:
+
+https://github.com/coreybutler/nvm-windows/releases/tag/1.1.12
+
+Atau unduh langsung file installer Windows melalui tautan berikut:
+
+https://github.com/coreybutler/nvm-windows/releases/download/1.1.12/nvm-setup.exe
+
+Unduh file:
+
+```
+nvm-setup.exe
+```
+
+---
+
+### 2. Instalasi NVM
+
+Setelah proses unduhan selesai:
+
+1. Jalankan file `nvm-setup.exe`.
+2. Klik **Next** pada setiap langkah instalasi.
+3. Gunakan pengaturan default.
+4. Klik **Finish** setelah instalasi selesai.
+
+---
+
+### 3. Verifikasi Instalasi
+
+Setelah instalasi selesai, tutup dan buka kembali CMD atau PowerShell, kemudian jalankan:
+
+```bash
+nvm version
+```
+
+Output yang diharapkan:
+
+```
+1.1.12
+```
+
+Jika versi tersebut muncul, maka NVM telah berhasil terinstal.
